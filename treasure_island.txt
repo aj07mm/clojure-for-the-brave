@@ -1,0 +1,13 @@
+As a Lisp-style functional programming language,
+Clojure lets you write robust and elegant code, and because it runs on the Java Virtual Machine,
+ you can bar advantage of the vast Java ecosystem. Clojure for the Brave and True offers a “dessert-first” approach:
+you’ll starstarstarstarstarstar	   	
+
+
+
+
+
+starstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarstarbt   play­ing with real programs immediately, as you steadily acclimate to the abstract but powerfupowerfupowerfupowerfu	
+
+
+:p
