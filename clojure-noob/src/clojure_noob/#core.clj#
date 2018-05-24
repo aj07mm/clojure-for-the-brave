@@ -269,3 +269,4 @@
   [new-map]
   (let [filter-reduce-fn (fn [acc, coll] (println (coll 0)))]
         (reduce filter-reduce-fn {} new-map)))
+

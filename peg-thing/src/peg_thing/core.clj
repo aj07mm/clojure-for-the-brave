@@ -1,0 +1,42 @@
+(ns peg-thing.core
+  (:gen-class))
+
+(defn foo
+  []
+  [1 2 3])
+
+(defn tri*
+  ([] (tri* 0 1))
+  ([sum n]
+   (let [new-sum (+ sum n)]
+     (println new-sum)
+     (cons new-sum (lazy-seq (tri* new-sum (inc n)))))))
+
+(defn tri2*
+  ([] (tri* 0 1))
+  ([sum n]
+   (let [new-sum (+ sum n)]
+     (println new-sum)
+     (lazy-seq (tri* new-sum (inc n))))))
+
+(comment
+  peg-thing.core> (+ 10 (inc 3))
+  14
+  peg-thing.core> (+ 10 (inc 4))
+  15
+  peg-thing.core> (+ 0 1)
+  1
+  peg-thing.core> (+ 1 (inc 1))
+  3
+  peg-thing.core> (+ 3 (inc 2))
+  6
+  peg-thing.core> (+ 6 (inc 3))
+  10
+  peg-thing.core> (+ 10 (inc 4))
+  15)
+
+
+(defn foo
+  []
+  (let [bar (read-line)]
+    (println bar)))
